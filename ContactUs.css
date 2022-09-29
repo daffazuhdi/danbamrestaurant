@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C1C1F
+}
+
+header h1{
+    padding: 25px;
+    padding-left: 25px;
+    color: white;
+}
+.danbam-logo{
+    width: 100px;
+}
+.menu-link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #f500bd;
+    margin: 0;
+    color: white;
+}
+
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link a:hover{
+    color: black;
+}
+
+.menu-link li{
+    padding: 25px;
+    text-align: center;
+   
+}
+
+.dropdown-menu{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f500bd;
+    padding: 0px;
+}
+
+.dropdown-menu li{
+    padding: 15px;
+    text-align: center;
+}
+.menu-link li:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;  
+}
+
+.dropdown-responsive{
+    display:none;
+}
+
+@media screen and (max-width: 500px){
+    .menu-link{
+        flex-direction: column;
+    }
+    .menu-link li:hover .dropdown-menu{
+        display: none;
+    }
+    .menu-link li:hover ~ .dropdown-responsive{
+        display: block;
+        text-align: right;
+        padding-right: 30%;
+    }
+}
+
+h2{
+    color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    background-color: violet;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+body{
+    background-image:url(img/ContactUs.png);
+    background-size: cover;
+    margin:0px;
+    height: 100%; 
+}
+
+.name{
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 0px;
+    padding-left: 3%;
+}
+
+.email{
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 3%;
+}
+
+.gender{
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 3%;
+}
+
+.massage{
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 3%;
+}
+
+.location{
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 3%;
+}
+
+.Agree{
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 3%;
+}
+
+.tutup{
+    padding-left: 3%;
+}
+
+button{
+   width: 500px;
+   float: left;
+   margin-right: 10px;
+   display: block;
+   font-size: 17px;
+}
+
+input[type=checkbox]{
+    margin: 50px;
+    width: 20px;
+    height: 20px;
+    padding-left: 1%;
+}
+
+input[type=radio]{
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+    padding-left: 1%;
+}
+
+.female{
+    text-align: left;
+    color: whitesmoke;
+    padding-left: 1%;
+}
+
+.male{
+    text-align: left;
+    color: whitesmoke;
+    padding-left: 1%;
+}
+
+input{
+    background-color: white;
+    border:2px solid  rgb(0, 0, 0);
+    justify-content: space-between;
+    font-size: 17px;
+    
+}
+
+select{
+    background-color: white;
+    border:2px solid rgb(0, 0, 0);
+    font-size: 17px;
+
+}
+option{
+    background-color: white;
+    border:2px solid rgb(0, 0, 0);
+}
+
+textarea{
+    background-color: white;
+    width: 20%;
+    font: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size:17px;
+    resize: none;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 15px;
+    width: 20%;
+    background-color: whitesmoke;
+
+}
+
+
+form{
+    height:200vh;
+    width :100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+.Atas #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #ed4437;
+    text-align: center;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.closing{
+position:flex;
+border-bottom: 0px;
+padding: 4%;
+background-color:#f500bd;
+text-align:center
+}
+

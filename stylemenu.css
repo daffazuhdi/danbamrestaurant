@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C1C1F;
+    color: white;
+}
+
+header h1{
+    padding: 25px;
+    padding-left: 25px;
+}
+.danbam-logo{
+    width: 100px;
+}
+.menu-link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #f500bc;
+    margin: 0;
+    color: white;
+
+}
+
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link a:hover{
+    color: black;
+}
+
+.menu-link li{
+    padding: 25px;
+    text-align: center;
+   
+}
+
+.dropdown-menu{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f500bc ;
+    padding: 0px;
+}
+
+.dropdown-menu li{
+    padding: 15px;
+    text-align: center;
+}
+.menu-link li:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;  
+}
+
+.dropdown-responsive{
+    display:none;
+}
+
+@media screen and (max-width: 500px){
+    .menu-link{
+        flex-direction: column;
+    }
+    .menu-link li:hover .dropdown-menu{
+        display: none;
+    }
+    .menu-link li:hover ~ .dropdown-responsive{
+        display: block;
+        text-align: right;
+        padding-right: 30%;
+    }
+}
+
+#banner{
+text-align: center;
+background-color: #1C1C1F;
+}
+
+#image{
+    width: 60%; 
+}
+
+.btn{
+    text-align: center;
+    background-color: #1C1C1F;
+    padding: 10px;
+    color: white;
+
+}
+
+.ourmenu h1{
+    padding: 1%;
+    text-align: center;
+    background-color:#f500bc;
+    color: white;
+}
+
+.food{
+    background-color: #1C1C1F;
+}
+.food h1{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-decoration: underline;
+    color: white;
+}
+.signature2{
+    text-align: center;
+    padding: 30px;
+    display: flex;
+}
+
+.menu1{
+    width: 70%;
+    color: white;
+    
+}
+
+.menu2{
+    width: 70%;
+    color: white;
+}
+
+.menu3{
+    width: 70%;
+    color: white;
+}
+
+.drinks{
+    background-color: #e6a3d6;
+}
+.drinks h1{
+    padding: 30px;
+    text-decoration: underline;
+}
+.menu4{
+    width: 70%;
+    
+}
+
+.menu5{
+    width: 70%;
+}
+
+.menu6{
+    width: 70%;
+}
+
+.dessert{
+    background-color: #1C1C1F;
+
+}
+.dessert h1{
+    padding: 30px;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    padding: 4%;
+    background-color: #e6a3d6;
+}

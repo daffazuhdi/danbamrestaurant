@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C1C1F;
+    color: white;
+}
+
+header h1{
+    padding: 25px;
+    padding-left: 25px;
+}
+.danbam-logo{
+    width: 100px;
+}
+.menu-link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #f500bc;
+    margin: 0;
+    color: white;
+
+}
+
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link a:hover{
+    color: black;
+}
+
+.menu-link li{
+    padding: 25px;
+    text-align: center;
+   
+}
+
+.dropdown-menu{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f500bc;
+    padding: 0px;
+}
+
+.dropdown-menu li{
+    padding: 15px;
+    text-align: center;
+}
+.menu-link li:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;  
+}
+
+.dropdown-responsive{
+    display:none;
+}
+
+@media screen and (max-width: 500px){
+    .menu-link{
+        flex-direction: column;
+    }
+    .menu-link li:hover .dropdown-menu{
+        display: none;
+    }
+    .menu-link li:hover ~ .dropdown-responsive{
+        display: block;
+        text-align: right;
+        padding-right: 30%;
+    }
+}
+
+.banner{
+    text-align: center;
+    background-color: #1C1C1F;
+}
+
+.banner img{
+    width: 50%;
+    height: 50%;
+}
+
+.content{
+    display: flex;
+    background-color: #e6a3d6;
+    
+}
+.danbamrest{
+    margin: 5%;
+    width: 40%;
+}
+.content2{
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.content2 h1{
+    margin: 0%;
+}
+
+.content2 p{
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.signature{
+
+    padding: 30px;
+    background-color: #1C1C1F;
+    color: white;
+}
+.signature h1{
+    padding-left: 3%;
+    text-decoration: underline;
+}
+.signature2{
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+}
+
+.menu1{
+    width: 70%;
+    
+}
+
+.menu2{
+    width: 70%;
+}
+
+.menu3{
+    width: 70%;
+}
+
+.location{
+    padding: 2%;
+    text-decoration: underline;
+    background-color: #e6a3d6;
+}
+
+.location h1{
+    padding-left: 3%;
+}
+.location p{
+    text-align: center;
+    padding: 5%;
+}
+
+.footer{
+    text-align: center;
+    padding: 4%;
+    background-color: #1C1C1F ;
+    color: white;
+}

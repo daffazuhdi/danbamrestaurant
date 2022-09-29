@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="ContactUs.js"></script>
+    
+    <title>DanBam | Contact Us</title>
+</head>
+
+
+
+<body> 
+    <header>
+        <h1>DanBam</h1>
+        <img class="danbam-logo" src="img/Logo Danbam.png" alt="danbamlogo">
+    </header>
+
+    <div class="menu-bar">
+        <ul class="menu-link">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a>
+                <ul class="dropdown-menu">
+                    <li>Food</li>
+                    <li>Drink</li>
+                    <li>Dessert</li>
+                </ul>
+            </li>
+            <li class="dropdown-responsive">Food</li>
+            <li class="dropdown-responsive">Drink</li>
+            <li class="dropdown-responsive">Dessert</li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="Atas">
+        <br><br>
+     <h2>Contact Us</h2>
+     <div id="error_message"></div>
+    
+<form method="POST" action="#" id="ContactUs" onsubmit="return validation();">
+   
+<div>
+    <div>
+        <label class="name" for="name">Name:</label>
+        <input placeholder="Name" type="text" name="name"  id="namae"> 
+        <br><br>
+    </div>
+
+
+    <div>
+        <label class="email" for="email">Email:</label>
+        <input placeholder="Email" type="text" name="email" id="email">
+        
+    </div>
+    
+    <div class="gender">
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="gender" value="male"> 
+        <label class="male">Male</label>
+         
+     <input type="radio" name="gender" id="gender" value="female"> 
+      <label class="female">Female</label>    
+        <br><br>
+    </div>
+    
+     
+    <div class="from-section">  
+        </select>
+        <label class="location" for="">Location:</label>
+        <select name="location" id="location">
+        <option value="">Choose Location</option>
+        <option value="Binus Alam Sutera">Binus Alam Sutera</option>
+        <br><br>
+         </select>
+
+   </div>
+   <br><br>
+   <div class="from-section">
+    <label class="massage" for="">Message:</label>
+    <textarea placeholder="Message" name="message" id="massage" value="Massage" cols="30" rows="10"></textarea>
+    <br><br>
+   </div>
+  
+   <div>
+    
+    <label for="" class="Agree">Agree for New Info:</label>
+    <input  type="checkbox" name = "Agree for New Info" id="Agrea">
+    
+</div>
+
+   <div class=tutup>
+
+   <input type="submit" value="Submit">
+   </div>
+
+  </form>
+</div>
+
+<div class="closing">
+    &copy;  Copyright Danbam Restaurant. All Rights Reserved
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C1C1F;
+    color: white;
+}
+
+header h1{
+    padding: 25px;
+    padding-left: 25px;
+}
+.danbam-logo{
+    width: 100px;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+.location2{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2%;
+
+}
+
+.coming{
+    padding: 40px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.Binus{
+    padding: 20px;
+    background-color: #b588f7 ;
+    color: #04F5ED;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.binuslogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+img{
+    width: 30%;
+}
+
+
+.menu-link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #f500bd ;
+    margin: 0;
+    color: white;
+}
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link a:hover{
+    color: black;
+}
+
+body{
+    background-image:url(img/honey.jpg);
+    background-size: cover;
+    margin:0px;
+    height: 100%; 
+}
+
+.Location{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.menu-link li{
+    padding: 25px;
+    text-align: center;
+   
+}
+
+.dropdown-menu{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f500bd;
+    padding: 0px;
+}
+
+.dropdown-menu li{
+    padding: 15px;
+    text-align: center;
+}
+.menu-link li:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;  
+}
+
+.dropdown-responsive{
+    display:none;
+}
+
+@media screen and (max-width: 500px){
+    .menu-link{
+        flex-direction: column;
+    }
+    .menu-link li:hover .dropdown-menu{
+        display: none;
+    }
+    .menu-link li:hover ~ .dropdown-responsive{
+        display: block;
+        text-align: right;
+        padding-right: 30%;
+    }
+}
+
+.closing{
+
+    text-align:center;
+    padding: 4%;
+    background-color:#f500bd;
+    border-bottom: 0px;
+   
+ }
+    
